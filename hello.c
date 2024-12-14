@@ -72,7 +72,6 @@ static int __init hello_init(void) {
 		}
 
 		event->event_ktime = ktime_get();
-		INIT_LIST_HEAD(&event->list);
 		list_add_tail(&event->list, &event_list_head);
 
 		printk(KERN_INFO "Hello, world!\n");
